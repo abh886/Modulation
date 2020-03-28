@@ -7,7 +7,7 @@ Created on Mon Jul  1 02:25:51 2019
 
 from numpy import arange,linspace,cos,pi,sin
 import matplotlib.pyplot as plt
-import math
+
 X=[]
 x=[1,0,1,0,1,0]
 for i in range(len(x)):
@@ -16,11 +16,11 @@ for i in range(len(x)):
     elif x[i] == 0:
         X.append(0)
 
-t=arange(0,len(x),0.01)
+t=arange(0,1,0.01)
 op1=[]
 op2=[]
 for j in range(len(t)):
-    op1.append(sin(2*pi*2*t[j]))
+    op1.append(sin(2*pi*3*t[j]))
     
 for k in range(len(t)):
     op2.append(sin(2*pi*1*t[k]))
